@@ -10,7 +10,7 @@ export class LoaderService {
     public loadingController: LoadingController
   ) { }
 
-   showLoader(message='', duration=2000) : Promise<any> {
+   showLoader(message='', duration?:number) : Promise<any> {
 
     return this.loadingController.create({
       message: message,
